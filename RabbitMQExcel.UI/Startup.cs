@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,6 +30,10 @@ namespace RabbitMQExcel.UI
                 options.UseSqlServer(Configuration.GetConnectionString("SqlServer"));
             });
 
+            services.AddIdentity<IdentityUser,IdentityRole>(opt=>{
+            opt.User.RequireUniqueEmail = true;
+            }).AddEntityFrameworkStores<AppDbContext>();
+
             services.AddControllersWithViews();
         }
 
@@ -49,7 +54,7 @@ namespace RabbitMQExcel.UI
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
