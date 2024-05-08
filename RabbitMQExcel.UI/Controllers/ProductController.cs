@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using RabbitMQExcel.UI.Models;
+using RabbitMQExcel.UI.Services;
+using RabbitMQExcel.UI.Shared;
 
 namespace RabbitMQExcel.UI.Controllers
 {
@@ -17,11 +19,13 @@ namespace RabbitMQExcel.UI.Controllers
     {
         private readonly AppDbContext _context;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly RabbitMQPublisher _rabbitMQPublisher;
 
-        public ProductController(UserManager<IdentityUser> userManager, AppDbContext context)
+        public ProductController(UserManager<IdentityUser> userManager, AppDbContext context, RabbitMQPublisher rabbitMQPublisher)
         {
             _userManager = userManager;
             _context = context;
+            _rabbitMQPublisher = rabbitMQPublisher;
         }
 
         public IActionResult Index()
@@ -42,6 +46,9 @@ namespace RabbitMQExcel.UI.Controllers
             };
             await _context.UserFiles.AddAsync(userFile);
             await _context.SaveChangesAsync();
+
+            _rabbitMQPublisher.Publish(new CreateExcelMessage() {FileId = userFile.Id});
+
             TempData["StartCreatingExcel"]= true;
 
             return RedirectToAction(nameof(Files));
