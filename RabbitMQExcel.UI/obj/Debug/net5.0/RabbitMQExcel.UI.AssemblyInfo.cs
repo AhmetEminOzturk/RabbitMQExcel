@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RabbitMQExcel.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3be9755bde2e4f911b17f1aac2c17a584dd73ef1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d0e6151cb5939f7426fc8b917ea5376ef7401d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("RabbitMQExcel.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RabbitMQExcel.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

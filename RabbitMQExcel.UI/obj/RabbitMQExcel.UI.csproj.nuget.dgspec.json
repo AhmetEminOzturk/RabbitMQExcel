@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\RabbitMQExcel.UI.csproj": {}
+    "C:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\RabbitMQExcel.UI.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\RabbitMQExcel.UI.csproj": {
+    "C:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\RabbitMQExcel.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\RabbitMQExcel.UI.csproj",
+        "projectUniqueName": "C:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\RabbitMQExcel.UI.csproj",
         "projectName": "RabbitMQExcel.UI",
-        "projectPath": "c:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\RabbitMQExcel.UI.csproj",
+        "projectPath": "C:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\RabbitMQExcel.UI.csproj",
         "packagesPath": "C:\\Users\\Ahmet\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\obj\\",
+        "outputPath": "C:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
