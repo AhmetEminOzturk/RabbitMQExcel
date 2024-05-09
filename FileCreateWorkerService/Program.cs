@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace FileCreateWorkerService
 {
-    public class Program
+   public class Program
     {
         public static void Main(string[] args)
         {
@@ -27,10 +27,11 @@ namespace FileCreateWorkerService
 
                     IConfiguration Configuration = hostContext.Configuration;
 
-                      services.AddDbContext<AdventureWorksLT2019Context>(options =>
+                    services.AddDbContext<AdventureWorksLT2019Context>(options =>
                     {
                         options.UseSqlServer(Configuration.GetConnectionString("SqlServer"));
                     });
+
 
                     services.AddSingleton<RabbitMQClientService>();
                     services.AddSingleton(sp => new ConnectionFactory() { Uri = new Uri(Configuration.GetConnectionString("RabbitMQ")), DispatchConsumersAsync = true });

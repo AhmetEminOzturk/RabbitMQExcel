@@ -11,10 +11,11 @@ using RabbitMQExcel.UI.Models;
 
 namespace RabbitMQExcel.UI.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class FilesController : ControllerBase
     {
+
         private readonly AppDbContext _context;
 
         public FilesController(AppDbContext context)
@@ -23,11 +24,12 @@ namespace RabbitMQExcel.UI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Upload(IFormFile file, int fileId)
+        public async Task<IActionResult> Upload(IFormFile file,int fileId)
         {
-            if(file is not {Length: >0}) return BadRequest();
+            if (file is not { Length: > 0 }) return BadRequest();
 
-            var userFile = await _context.UserFiles.FirstAsync(x=> x.Id == fileId);
+
+            var userFile = await  _context.UserFiles.FirstAsync(x => x.Id == fileId);
 
             var filePath = userFile.FileName + Path.GetExtension(file.FileName);
 
@@ -45,10 +47,8 @@ namespace RabbitMQExcel.UI.Controllers
             userFile.FileStatus = FileStatus.Completed;
 
             await _context.SaveChangesAsync();
-
+            //SignalR notification oluşturulacak
             return Ok();
-
-
         }
     }
 }

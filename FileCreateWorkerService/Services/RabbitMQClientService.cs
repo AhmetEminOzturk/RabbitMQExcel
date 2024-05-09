@@ -6,11 +6,13 @@ using RabbitMQ.Client;
 
 namespace FileCreateWorkerService.Services
 {
-      public class RabbitMQClientService : IDisposable
+       public class RabbitMQClientService : IDisposable
     {
         private readonly ConnectionFactory _connectionFactory;
         private IConnection _connection;
         private IModel _channel;
+       
+     
         public static string QueueName = "queue-excel-file";
 
         private readonly ILogger<RabbitMQClientService> _logger;
@@ -19,6 +21,7 @@ namespace FileCreateWorkerService.Services
         {
             _connectionFactory = connectionFactory;
             _logger = logger;
+
         }
 
         public IModel Connect()
@@ -32,6 +35,9 @@ namespace FileCreateWorkerService.Services
             }
 
             _channel = _connection.CreateModel();
+
+          
+
             _logger.LogInformation("RabbitMQ ile bağlantı kuruldu...");
 
 

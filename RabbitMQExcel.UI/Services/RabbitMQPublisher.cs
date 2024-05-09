@@ -9,7 +9,7 @@ using RabbitMQExcel.UI.Shared;
 
 namespace RabbitMQExcel.UI.Services
 {
-    public class RabbitMQPublisher
+   public class RabbitMQPublisher
     {
         private readonly RabbitMQClientService _rabbitMQClientService;
 
@@ -33,6 +33,4 @@ namespace RabbitMQExcel.UI.Services
 
         }
     }
-
-  
 }

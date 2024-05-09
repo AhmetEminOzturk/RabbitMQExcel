@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyProductAttribute("RabbitMQExcel.UI")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d0e6151cb5939f7426fc8b917ea5376ef7401d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0667a5f7471476f2d9b23d3f23036882855404d9")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RabbitMQExcel.UI.Views")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 

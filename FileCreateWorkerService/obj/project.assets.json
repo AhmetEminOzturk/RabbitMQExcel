@@ -10258,11 +10258,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\FileCreateWorkerService\\FileCreateWorkerService.csproj",
+      "projectUniqueName": "c:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\FileCreateWorkerService\\FileCreateWorkerService.csproj",
       "projectName": "FileCreateWorkerService",
-      "projectPath": "C:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\FileCreateWorkerService\\FileCreateWorkerService.csproj",
+      "projectPath": "c:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\FileCreateWorkerService\\FileCreateWorkerService.csproj",
       "packagesPath": "C:\\Users\\Ahmet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\FileCreateWorkerService\\obj\\",
+      "outputPath": "c:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\FileCreateWorkerService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10279,8 +10279,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\RabbitMQExcel.UI.csproj": {
-              "projectPath": "C:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\RabbitMQExcel.UI.csproj"
+            "c:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\RabbitMQExcel.UI.csproj": {
+              "projectPath": "c:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\RabbitMQExcel.UI\\RabbitMQExcel.UI.csproj"
             }
           }
         }

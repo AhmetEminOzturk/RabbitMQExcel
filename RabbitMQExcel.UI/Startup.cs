@@ -28,18 +28,24 @@ namespace RabbitMQExcel.UI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-             services.AddSingleton(sp => new ConnectionFactory() { Uri = new Uri(Configuration.GetConnectionString("RabbitMQ")), DispatchConsumersAsync=true });
+
+            services.AddSingleton(sp => new ConnectionFactory() { Uri = new Uri(Configuration.GetConnectionString("RabbitMQ")), DispatchConsumersAsync = true });
 
             services.AddSingleton<RabbitMQPublisher>();
             services.AddSingleton<RabbitMQClientService>();
-            
-            services.AddDbContext<AppDbContext>(options=>{
+            services.AddDbContext<AppDbContext>(options =>
+            {
                 options.UseSqlServer(Configuration.GetConnectionString("SqlServer"));
             });
 
-            services.AddIdentity<IdentityUser,IdentityRole>(opt=>{
-            opt.User.RequireUniqueEmail = true;
+            services.AddIdentity<IdentityUser, IdentityRole>(opt =>
+            {
+
+                opt.User.RequireUniqueEmail = true;
+
             }).AddEntityFrameworkStores<AppDbContext>();
+
+
 
             services.AddControllersWithViews();
         }

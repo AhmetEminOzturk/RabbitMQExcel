@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dn1Y+Pvq41Lc8UUWdOL2ncvQiDAQynPxhSaYA12hpZN1t1asB/7ki/NgjkIk532vL8gxcrOFzAk6Ic9i9wKZJA==",
+  "dgSpecHash": "tlIrlGFTNGMcb2kqewKsspO2tsRR0PZSa401LxxwusOSCwF7sK3HBTKLrebqasaHjsynrUtiJ3eQXLtiAqM9Bw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\FileCreateWorkerService\\FileCreateWorkerService.csproj",
+  "projectFilePath": "c:\\Users\\Ahmet\\Desktop\\Trainings\\RabbitMQExcel\\FileCreateWorkerService\\FileCreateWorkerService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ahmet\\.nuget\\packages\\closedxml\\0.95.4\\closedxml.0.95.4.nupkg.sha512",
     "C:\\Users\\Ahmet\\.nuget\\packages\\documentformat.openxml\\2.7.2\\documentformat.openxml.2.7.2.nupkg.sha512",
